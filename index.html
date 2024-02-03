@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Protest+Riot&display=swap"
+      rel="stylesheet"
+    />
+    <title>Reverse Timer</title>
+  </head>
+  <body>
+    <div class="glowing">
+      <span style="--i: 1"></span>
+      <span style="--i: 2"></span>
+      <span style="--i: 3"></span>
+    </div>
+
+    <div class="glowing">
+      <span style="--i: 1"></span>
+      <span style="--i: 2"></span>
+      <span style="--i: 3"></span>
+    </div>
+
+    <div class="glowing">
+      <span style="--i: 1"></span>
+      <span style="--i: 2"></span>
+      <span style="--i: 3"></span>
+    </div>
+
+    <div class="glowing">
+      <span style="--i: 1"></span>
+      <span style="--i: 2"></span>
+      <span style="--i: 3"></span>
+    </div>
+    <div class="preloader" id="preloader">
+<div class="lds-ripple"><div></div><div></div></div>
+
+    </div>
+    
+    <div class="countdown-wrapper">
+        <h1 class="title">Countdown to my birthday:</h1>
+        <div class="input-data">
+            <input type="text" class="datetime-picker" />
+<button type="button" class="data-start">Start</button>
+        </div>
+        
+        
+        <div class="countdown" id="countdown">
+<div class="time">
+        <span class="value" data-days>00</span>
+        <span class="label">Days</span>
+      </div>
+      <div class="time">
+        <span class="value" data-hours>00</span>
+        <span class="label">Hours</span>
+      </div>
+      <div class="time">
+        <span class="value" data-minutes>00</span>
+        <span class="label">Minutes</span>
+      </div>
+      <div class="time">
+        <span class="value" data-seconds>00</span>
+        <span class="label">Seconds</span>
+      </div>
+        </div>
+      
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
