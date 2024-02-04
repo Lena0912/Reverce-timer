@@ -49,7 +49,7 @@ const options = {
 
 refs.btnStart.addEventListener('click', function () {
     if (!selectedDate) {
-        Notiflix.Notify.warning("Please choose a date first!");
+        
         return;
     }
     timerId = setInterval(updateCounter, 1000);
@@ -58,6 +58,7 @@ refs.btnStart.addEventListener('click', function () {
     refs.countdown.style.display = "flex";
 
     refs.btnStart.disabled = true;
+    
 });
 
 flatpickr(dateOfBirthday, options);

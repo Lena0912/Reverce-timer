@@ -156,7 +156,7 @@ body::after {
 }
 .title {
     font-size: 60px;
-    margin: 0 0 40px;
+    margin: 0 0 120px;
     color: antiquewhite;
 }
 .time {
@@ -209,7 +209,11 @@ background-color: antiquewhite;
 
 /* Preloader */
 .preloader {
-
+position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 .lds-ripple {
     display: inline-block;
