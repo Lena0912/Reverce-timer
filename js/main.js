@@ -14,11 +14,6 @@ const refs = {
 let selectedDate;
 let timerId;
 
-// const currentYear = new Date().getFullYear();
-// const nextYear = new Date(`June 08 ${currentYear + 1} 00:00:00`);
-
-// dateOfBirthday.innerText = currentYear + 1;
-
 function updateCounter() {
 const currentTime = new Date();
 const diff = selectedDate - currentTime;
@@ -36,15 +31,17 @@ refs.minutes.innerText = minutesLeft < 10 ? "0" + minutesLeft : minutesLeft;
 }
 
 
-
 const options = {
   enableTime: false,
   time_24hr: true,
   defaultDate: new Date(),
-    minuteIncrement: 1,
+  minuteIncrement: 1,
   minDate: "today",
-    onClose(selectedDates) {
-        selectedDate = new Date(selectedDates[0]);
+  altInput: true,
+  altFormat: "F j, Y",
+  dateFormat: "Y-m-d",
+  onClose(selectedDates) {
+    selectedDate = new Date(selectedDates[0]);
     console.log(selectedDate);
   },
 };
@@ -52,7 +49,7 @@ const options = {
 
 refs.btnStart.addEventListener('click', function () {
     if (!selectedDate) {
-        console.log("Please choose a date first!");
+        Notiflix.Notify.warning("Please choose a date first!");
         return;
     }
     timerId = setInterval(updateCounter, 1000);

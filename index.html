@@ -15,10 +15,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
     />
+    <link rel="stylesheet" href="dist/notiflix-3.2.7.min.css" />
     <title>Reverse Timer</title>
   </head>
   <body>
-    <div class="glowing">
+    <div class="animation">
+<div class="glowing">
       <span style="--i: 1"></span>
       <span style="--i: 2"></span>
       <span style="--i: 3"></span>
@@ -41,6 +43,8 @@
       <span style="--i: 2"></span>
       <span style="--i: 3"></span>
     </div>
+    </div>
+    
     <div class="preloader" id="preloader">
       <div class="lds-ripple">
         <div></div>
@@ -79,6 +83,7 @@
 <script>
     flatpickr(".datetime-picker")
 </script>
+<script src="dist/notiflix-3.2.7.min.js"></script>
     <script src="./js/main.js" type="module"></script>
   </body>
 </html>

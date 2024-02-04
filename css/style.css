@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,7 +14,14 @@ body {
     overflow: hidden;
     font-family: 'Protest Riot', sans-serif;
 }
-/* 
+
+.animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate (-50%, -50%);
+}
+
 .glowing {
     position: relative;
     min-width: 700px;
@@ -123,7 +131,10 @@ body {
     100% {
         transform: rotate(0deg);
     }
-} */
+}
+
+
+
 
 body::after {
     content: '';
@@ -197,6 +208,9 @@ background-color: antiquewhite;
 }
 
 /* Preloader */
+.preloader {
+
+}
 .lds-ripple {
     display: inline-block;
     position: relative;
